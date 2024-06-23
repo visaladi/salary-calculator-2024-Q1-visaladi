@@ -1,0 +1,71 @@
+/* src/components/Task.css */
+
+.task {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff; /* Optional: Set background color for task card */
+  }
+  
+  .task-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .status-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .status-button {
+    padding: 5px 10px;
+    border: 2px solid rgba(0, 123, 255, 0.5); /* Transparent blue border */
+    background-color: rgba(0, 123, 255, 0.1); /* Transparent blue background */
+    border-radius: 15px; /* Rounded edges */
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .status-button:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Slightly darker transparent blue on hover */
+  }
+  
+  .task h3 {
+    margin: 0 0 10px;
+  }
+  
+  .task p {
+    margin: 0 0 5px;
+  }
+  
+  /* Styles for different status */
+  .status-select {
+    min-width: 80px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .status-select.inprogress {
+    color: black;
+    background-color: yellow;
+  }
+  
+  .status-select.done {
+    color: white;
+    background-color: green;
+  }
+  
+  .status-select.completed {
+    color: white;
+    background-color: gray;
+  }
+  
